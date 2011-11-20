@@ -1,0 +1,30 @@
+--- dpx/libdpx/Makefile.am.orig	2011-11-20 09:55:33.000000000 +0100
++++ dpx/libdpx/Makefile.am	2011-11-20 10:30:43.337652371 +0100
+@@ -1,7 +1,7 @@
+ 
+-lib_LIBRARIES = libdpx.a
++lib_LTLIBRARIES = libdpx.la
+ 
+-libdpx_a_SOURCES = Codec.cpp \
++libdpx_la_SOURCES = Codec.cpp \
+                    DPX.cpp \
+                    DPXHeader.cpp \
+                    ElementReadStream.cpp \
+--- dpx/tools/dpxheader/Makefile.am.orig	2011-11-20 09:55:33.000000000 +0100
++++ dpx/tools/dpxheader/Makefile.am	2011-11-20 10:36:28.250997251 +0100
+@@ -1,5 +1,5 @@
+ 
+-LIBDPX = $(top_builddir)/libdpx/libdpx.a
++LIBDPX = $(top_builddir)/libdpx/libdpx.la
+ 
+ INCLUDES = -I$(top_builddir)/libdpx
+ 
+--- dpx/tools/dpx2tiff/Makefile.am.orig	2011-11-20 09:55:33.000000000 +0100
++++ dpx/tools/dpx2tiff/Makefile.am	2011-11-20 10:36:37.380997558 +0100
+@@ -1,5 +1,5 @@
+ 
+-LIBDPX = $(top_builddir)/libdpx/libdpx.a
++LIBDPX = $(top_builddir)/libdpx/libdpx.la
+ 
+ INCLUDES = -I$(top_builddir)/libdpx
+ 
