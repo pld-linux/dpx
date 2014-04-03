@@ -1,9 +1,9 @@
-%define	rel 	2
+%define	rel 	3
+%define	subver	svn4
 Summary:	SMPTE DPX v2 Image Format reader/writer library
 Summary(pl.UTF-8):	Biblioteka do odczytu/zapisu obrazów w formacie SMPTE DPX v2
 Name:		dpx
 Version:	0.5
-%define	subver	svn4
 Release:	0.%{subver}.%{rel}
 License:	BSD
 Group:		Libraries
@@ -58,6 +58,9 @@ Statyczna biblioteka DPX.
 Summary:	DPX API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki DPX
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 API and internal documentation for DPX library.
