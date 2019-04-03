@@ -7,11 +7,11 @@ Version:	0.5
 Release:	0.%{subver}.%{rel}
 License:	BSD
 Group:		Libraries
-# svn checkout http://dpx.googlecode.com/svn/trunk/ dpx
+# originally: svn checkout http://dpx.googlecode.com/svn/trunk/ dpx
 Source0:	%{name}-%{subver}.tar.xz
 # Source0-md5:	a6bf177cb29eaaefb5208f3dcf486658
 Patch0:		%{name}-shared.patch
-URL:		http://code.google.com/p/dpx/
+URL:		https://github.com/patrickpalmer/dpx
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
