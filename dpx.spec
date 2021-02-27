@@ -58,9 +58,7 @@ Statyczna biblioteka DPX.
 Summary:	DPX API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki DPX
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API and internal documentation for DPX library.
