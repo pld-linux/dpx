@@ -1,4 +1,4 @@
-%define	rel 	5
+%define	rel 	6
 %define	subver	svn4
 Summary:	SMPTE DPX v2 Image Format reader/writer library
 Summary(pl.UTF-8):	Biblioteka do odczytu/zapisu obrazów w formacie SMPTE DPX v2
